@@ -10,12 +10,14 @@ body {
 a {
   padding: 10px;
   text-decoration: none;
-  color: black;
+  color: purple;
 }
 
 .navbar {
   display: flex;
   margin: 15px 30px;
+  justify-content: space-between;
+
 }
 
 .logo {
@@ -33,3 +35,73 @@ a {
 button:focus {
   outline: none;
 }
+
+.container_presentation {
+  margin: 5% 0 5% 0;
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  align-items: flex-start;
+  text-align: center;
+}
+
+
+.image-container {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+
+}
+.avatar {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.avatar.active {
+  display: none;
+}
+
+
+.skills {
+  
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.column {
+  width: 100%;
+}
+
+#front-dev-tools {
+  opacity: 0;
+}
+
+@media (max-width: 700px) { 
+  .navbar {
+    justify-content:flex-start;
+  }
+  
+  .container_presentation {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop {
+    display: none;
+  }
+  .skills {
+    flex-direction: column;
+  }
+
+  .column:first-child {
+    order: 2;
+  }
+  
+  .column:last-child {
+    order:1;
+  }
+}
+
