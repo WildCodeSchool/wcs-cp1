@@ -69,7 +69,7 @@
 }
 
 .skills {
-  margin-top: -30px;
+  margin-top: 30px;
   border-radius: 12px;
   padding: 0 10%;
   display: flex;
@@ -77,6 +77,25 @@
 
 }
 
+.disabled {
+  opacity: 0.4;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+.contents {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 8%;
+  margin-bottom: 8%;
+
+}
 
 .column {
   border-left: 1px solid #e6ecf8;
@@ -127,6 +146,9 @@ p {
 }
 
 @media (min-width: 700px) {
+  .skills {
+    flex-direction: row-reverse;
+  }
 }
 
 @media (max-width: 700px) {
