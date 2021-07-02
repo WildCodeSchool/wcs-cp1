@@ -80,3 +80,17 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+@media screen and (min-width: 700px) {
+  
+.navbar {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+  margin: auto;
+}
+}
