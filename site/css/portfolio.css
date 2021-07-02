@@ -93,4 +93,16 @@ p {
   justify-content: flex-end;
   margin: auto;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.introduction {
+  justify-content: center;
+  text-align: center;
+}
+
 }
