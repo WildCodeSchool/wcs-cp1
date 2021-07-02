@@ -110,6 +110,21 @@ p {
   justify-content: center;
 }
 
+.skills {
+  display: flex;
+  columns: 2;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.column {
+  width: 50%;
+}
+.skill {
+  justify-content: center;
+  text-align: center;
+}
+
 }
 
 @media screen and (max-width:700px) {
