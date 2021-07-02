@@ -16,9 +16,21 @@ Au final la liste devra ressembler à :
 */
 
 function theaterSieges() {
-  // Your code here !
-}
 
-console.log(theaterSieges());
 
-module.exports = theaterSieges;
+  const colonnes = 26;
+  const  places = 100;
+  let arr = new Array(colonnes); 
+  for (let i = 0; i < colonnes; i++) {
+   const sieges = new Array(places); 
+   for (let j = 0; j< sieges.length; j++) {
+    sieges[j] = (i+1)+"-"+(j+1);
+   }
+   arr[i] = sieges; 
+  }
+  return arr;
+  }
+  
+  console.log(theaterSieges()[25][10]);
+  
+  module.exports = theaterSieges;
