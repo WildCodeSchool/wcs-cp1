@@ -11,7 +11,19 @@ sumArr( ["2", "7", "3", "8", "2"], ["2", "4", "9"] ) doit renvoyer ["4", "11", "
 */
 
 function sumArr(arrayA, arrayB) {
-  // Your code here !
+  let finalArray = [];
+  if (arrayA.length >= arrayB.length) {
+    for (let i = 0; i < arrayA.length; i++) {
+      arrayB[i] = arrayB[i] || 0;
+      finalArray.push(Number(arrayA[i]) + Number(arrayB[i]));
+    }
+  } else {
+    for (let i = 0; i < arrayB.length; i++) {
+      arrayA[i] = arrayA[i] || 0;
+      finalArray.push(Number(arrayA[i]) + Number(arrayB[i]));
+    }
+  }
+  return finalArray;
 }
 
 module.exports = sumArr;
