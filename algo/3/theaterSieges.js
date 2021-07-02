@@ -16,9 +16,8 @@ Au final la liste devra ressembler à :
 */
 
 function theaterSieges() {
-  // Your code here !
+
 }
-
 console.log(theaterSieges());
-
+  
 module.exports = theaterSieges;
