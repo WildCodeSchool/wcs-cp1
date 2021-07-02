@@ -108,6 +108,12 @@ p {
     padding-bottom: 5vh;
   }
 
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
 
 }
 
@@ -115,6 +121,11 @@ p {
 
   .desktop{
     display: none;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 
