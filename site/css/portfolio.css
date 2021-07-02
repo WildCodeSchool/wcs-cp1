@@ -1,3 +1,39 @@
+@media screen and (min-width: 700px){
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+  }
+  .first-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  .contents {
+    display: flex;
+    justify-content: space-around;
+  }
+  .heading{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 699px){
+  .desktop{
+    display: none;
+  }
+  .skills{
+    display:flex;
+    flex-direction: column-reverse;
+  }
+}
+
 .pink-bg {
   background-color: pink;
 }
@@ -79,4 +115,8 @@ img {
 p {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.disabled{
+  opacity: 0.3;
 }
