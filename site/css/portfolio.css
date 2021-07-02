@@ -105,4 +105,15 @@ p {
   text-align: center;
 }
 
+.desktop {
+  display: flex;
+  justify-content: center;
+}
+
+}
+
+@media screen and (max-width:700px) {
+  .desktop {
+    display: none;
+  }
 }
