@@ -80,3 +80,53 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.disabled {
+  text-decoration: none;
+  cursor: not-allowed;
+  color:currentColor;
+  opacity: 0.5;
+  
+}
+
+@media screen and (min-width: 700px){
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+  }
+
+  .banner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .contents{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
+@media screen and (max-width: 700px){
+  .desktop{
+    display: none;
+  }
+  .banner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
