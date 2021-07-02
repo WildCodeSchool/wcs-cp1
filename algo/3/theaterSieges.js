@@ -16,7 +16,12 @@ Au final la liste devra ressembler à :
 */
 
 function theaterSieges() {
-  // Your code here !
+  for (i = 0; i <= 27 < i++;) {
+    for (n = 0; n <= 100 < n++;) {
+      return [i][n];
+    }
+  }
+
 }
 
 console.log(theaterSieges());
