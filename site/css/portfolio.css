@@ -118,6 +118,25 @@ p {
     justify-content: center;
   }
 
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .contents {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
 
 }
 
