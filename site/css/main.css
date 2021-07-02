@@ -18,8 +18,60 @@ a {
   margin: 15px 30px;
 }
 
+.menu{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+
+}
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
 .logo {
   max-height: 3rem;
+}
+
+.projects{
+  text-align: center;
+}
+
+#btn {
+  cursor: pointer;
+  height: 35px;
+  background: rgb(245, 150, 170);
+  border: solid 1px white;
+  width: 120px;
+  border-radius: 10%;
+}
+
+.contents{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.disabled{
+  opacity: 0.5;
 }
 
 #name {
@@ -32,4 +84,14 @@ a {
 
 button:focus {
   outline: none;
+}
+
+@media screen and (max-width: 700px) {
+  .desktop{
+    display: none;
+  }
+
+  .skills{
+    flex-direction: column-reverse;
+  }
 }
