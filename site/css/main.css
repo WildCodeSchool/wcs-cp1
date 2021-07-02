@@ -17,6 +17,12 @@ a {
   display: flex;
   margin: 15px 30px;
 }
+.navbar menu {
+  
+  display: flex;
+  justify-content: flex-end;
+  
+}
 
 .logo {
   max-height: 3rem;
