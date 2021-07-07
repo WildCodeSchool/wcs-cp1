@@ -80,3 +80,34 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.desktop {
+  display: none;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 700px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .skills {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+}
